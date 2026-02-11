@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@nexus/shared': '/home/runner/work/nexus-command-center/nexus-command-center/packages/shared/src'
+      '@nexus/shared': path.resolve(__dirname, '../../packages/shared/src')
     }
   }
 })
