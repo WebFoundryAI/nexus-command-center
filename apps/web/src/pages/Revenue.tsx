@@ -10,12 +10,7 @@ export const Revenue: React.FC = () => {
     { key: 'status', header: 'Payment Status' },
   ];
 
-  const data = [
-    { site: 'Miami Plumbing Services', client: 'ABC Plumbing LLC', monthly: '$800', ytd: '$1,600', status: 'Paid' },
-    { site: 'Dallas HVAC Repair', client: 'Cool Air Systems', monthly: '$750', ytd: '$1,500', status: 'Paid' },
-    { site: 'Austin Roofing Pro', client: 'Elite Roofing Inc', monthly: '$900', ytd: '$1,800', status: 'Pending' },
-    { site: 'Houston Locksmith', client: 'Quick Lock Services', monthly: '$650', ytd: '$1,300', status: 'Paid' },
-  ];
+  const data: Record<string, string>[] = [];
 
   return (
     <div>
@@ -28,26 +23,26 @@ export const Revenue: React.FC = () => {
         <Card>
           <div className="flex flex-col">
             <span className="text-sm text-gray-500">Monthly Revenue</span>
-            <span className="text-3xl font-bold text-gray-900 mt-2">$12,450</span>
-            <span className="text-xs text-green-600 mt-1">+18% from last month</span>
+            <span className="text-3xl font-bold text-gray-900 mt-2">$0</span>
+            <span className="text-xs text-gray-500 mt-1">--</span>
           </div>
         </Card>
         <Card>
           <div className="flex flex-col">
             <span className="text-sm text-gray-500">YTD Revenue</span>
-            <span className="text-3xl font-bold text-gray-900 mt-2">$24,900</span>
+            <span className="text-3xl font-bold text-gray-900 mt-2">$0</span>
           </div>
         </Card>
         <Card>
           <div className="flex flex-col">
             <span className="text-sm text-gray-500">Active Rentals</span>
-            <span className="text-3xl font-bold text-gray-900 mt-2">24</span>
+            <span className="text-3xl font-bold text-gray-900 mt-2">0</span>
           </div>
         </Card>
         <Card>
           <div className="flex flex-col">
             <span className="text-sm text-gray-500">Avg Rate/Site</span>
-            <span className="text-3xl font-bold text-gray-900 mt-2">$519</span>
+            <span className="text-3xl font-bold text-gray-900 mt-2">$0</span>
           </div>
         </Card>
       </div>

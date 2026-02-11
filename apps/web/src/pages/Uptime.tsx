@@ -16,12 +16,7 @@ export const Uptime: React.FC = () => {
     { key: 'lastChecked', header: 'Last Checked' },
   ];
 
-  const data = [
-    { site: 'Miami Plumbing Services', status: 'Up', uptime: '99.9%', responseTime: '245ms', lastChecked: '2 min ago' },
-    { site: 'Dallas HVAC Repair', status: 'Up', uptime: '99.8%', responseTime: '312ms', lastChecked: '1 min ago' },
-    { site: 'Austin Roofing Pro', status: 'Up', uptime: '100%', responseTime: '189ms', lastChecked: '3 min ago' },
-    { site: 'Houston Locksmith', status: 'Up', uptime: '99.5%', responseTime: '278ms', lastChecked: '2 min ago' },
-  ];
+  const data: Record<string, string>[] = [];
 
   return (
     <div>
@@ -34,22 +29,22 @@ export const Uptime: React.FC = () => {
         <Card>
           <div className="flex flex-col">
             <span className="text-sm text-gray-500">Overall Uptime</span>
-            <span className="text-3xl font-bold text-gray-900 mt-2">99.8%</span>
+            <span className="text-3xl font-bold text-gray-900 mt-2">--</span>
             <span className="text-xs text-gray-500 mt-1">Last 30 days</span>
           </div>
         </Card>
         <Card>
           <div className="flex flex-col">
             <span className="text-sm text-gray-500">Avg Response Time</span>
-            <span className="text-3xl font-bold text-gray-900 mt-2">256ms</span>
+            <span className="text-3xl font-bold text-gray-900 mt-2">--</span>
             <span className="text-xs text-gray-500 mt-1">Across all sites</span>
           </div>
         </Card>
         <Card>
           <div className="flex flex-col">
             <span className="text-sm text-gray-500">Sites Monitored</span>
-            <span className="text-3xl font-bold text-gray-900 mt-2">24</span>
-            <span className="text-xs text-gray-500 mt-1">All operational</span>
+            <span className="text-3xl font-bold text-gray-900 mt-2">0</span>
+            <span className="text-xs text-gray-500 mt-1">--</span>
           </div>
         </Card>
       </div>

@@ -22,9 +22,14 @@ export const Settings: React.FC = () => {
               placeholder="Enter your Search Console API key"
               type="password"
             />
-            <Input 
-              label="Ahrefs API Key"
-              placeholder="Enter your Ahrefs API key"
+            <Input
+              label="DataForSEO API Login"
+              placeholder="Enter your DataForSEO API login"
+              type="password"
+            />
+            <Input
+              label="DataForSEO API Password"
+              placeholder="Enter your DataForSEO API password"
               type="password"
             />
             <div className="pt-4">
