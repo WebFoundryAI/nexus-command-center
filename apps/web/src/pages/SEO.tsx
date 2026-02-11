@@ -1,4 +1,3 @@
-import React from 'react';
 import { PageHeader, Card, Table, Badge } from '@nexus/shared';
 
 export const SEO: React.FC = () => {

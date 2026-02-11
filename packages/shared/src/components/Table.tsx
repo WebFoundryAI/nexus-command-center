@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface TableColumn {
   key: string;
   header: string;

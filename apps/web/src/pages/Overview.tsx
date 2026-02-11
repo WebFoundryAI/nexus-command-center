@@ -1,4 +1,3 @@
-import React from 'react';
 import { PageHeader, Card, Badge } from '@nexus/shared';
 
 export const Overview: React.FC = () => {

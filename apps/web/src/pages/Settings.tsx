@@ -1,4 +1,3 @@
-import React from 'react';
 import { PageHeader, Card, Input, Button } from '@nexus/shared';
 
 export const Settings: React.FC = () => {
