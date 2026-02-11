@@ -15,11 +15,7 @@ export const Admin: React.FC = () => {
     { key: 'lastActive', header: 'Last Active' },
   ];
 
-  const users = [
-    { name: 'Admin User', email: 'admin@nexus.com', role: 'Admin', lastActive: '2 min ago' },
-    { name: 'John Manager', email: 'john@nexus.com', role: 'Manager', lastActive: '1 hour ago' },
-    { name: 'Sarah Viewer', email: 'sarah@nexus.com', role: 'Viewer', lastActive: '3 hours ago' },
-  ];
+  const users: Record<string, string>[] = [];
 
   const activityColumns = [
     { key: 'user', header: 'User' },
@@ -27,11 +23,7 @@ export const Admin: React.FC = () => {
     { key: 'timestamp', header: 'Timestamp' },
   ];
 
-  const activities = [
-    { user: 'Admin User', action: 'Updated site settings', timestamp: '2026-02-11 12:30' },
-    { user: 'John Manager', action: 'Added new lead', timestamp: '2026-02-11 11:45' },
-    { user: 'Sarah Viewer', action: 'Viewed revenue report', timestamp: '2026-02-11 10:15' },
-  ];
+  const activities: Record<string, string>[] = [];
 
   return (
     <div>
@@ -73,19 +65,19 @@ export const Admin: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between mb-1">
                   <span className="text-sm text-gray-600">Storage Used</span>
-                  <span className="text-sm font-medium">2.4 GB / 10 GB</span>
+                  <span className="text-sm font-medium">0 GB / 10 GB</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-blue-600 h-2 rounded-full" style={{ width: '24%' }}></div>
+                  <div className="bg-blue-600 h-2 rounded-full" style={{ width: '0%' }}></div>
                 </div>
               </div>
               <div>
                 <div className="flex items-center justify-between mb-1">
                   <span className="text-sm text-gray-600">API Calls (Monthly)</span>
-                  <span className="text-sm font-medium">45,230 / 100,000</span>
+                  <span className="text-sm font-medium">0 / 100,000</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-blue-600 h-2 rounded-full" style={{ width: '45%' }}></div>
+                  <div className="bg-blue-600 h-2 rounded-full" style={{ width: '0%' }}></div>
                 </div>
               </div>
             </div>
